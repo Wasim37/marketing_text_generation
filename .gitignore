@@ -1,0 +1,9 @@
+*.json
+*.whl
+*.iter5
+*.zip
+*.cpython-36.pyc
+*.pdf
+*.ipynb_checkpoints/
+*.DS_Store
+runs/
