@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: jby
+@Author: author
 @Date: 2020-07-13 11:00:51
-@LastEditTime: 2020-07-26 21:20:32
-@LastEditors: Please set LastEditors
+LastEditTime: 2021-08-27 17:19:29
+LastEditors: Please set LastEditors
 @Description: Define the format of data used in the model.
-@FilePath: /JD_project_2/model/dataset.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/model/dataset.py
 '''
 
 

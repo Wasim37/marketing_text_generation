@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: lpx
+@Author: author
 @Date: 2020-07-13 11:00:51
-LastEditTime: 2020-10-20 10:16:25
+LastEditTime: 2021-08-27 17:20:57
 LastEditors: Please set LastEditors
 @Description: Helper functions or classes used in data processing.
-@FilePath: /JD_project_2/data/data_utils.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/data/data_utils.py
 '''
 
 import os

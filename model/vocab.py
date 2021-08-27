@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: jby
+@Author: author
 @Date: 2020-07-13 14:18:13
 LastEditTime: 2020-10-17 21:18:35
 LastEditors: Please set LastEditors
 @Description: Define the vocabulary object.
-@FilePath: /JD_project_2/model/vocab.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/model/vocab.py
 '''
 
 from collections import Counter

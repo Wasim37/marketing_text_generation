@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: lpx, jby
+@Author: author, author
 @Date: 2020-07-13 12:31:25
 LastEditTime: 2020-10-20 15:03:46
 LastEditors: Please set LastEditors
 @Description: Train the model.
-@FilePath: /JD_project_2/model/train.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/model/train.py
 '''
 
 

@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: lpx
+@Author: author
 @Date: 2020-07-13 17:56:13
 LastEditTime: 2020-10-17 21:24:33
 LastEditors: Please set LastEditors
 @Description: Evaluate the model with ROUGE score.
-@FilePath: /JD_project_2/model/rouge_eval.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/model/rouge_eval.py
 '''
 
 import os

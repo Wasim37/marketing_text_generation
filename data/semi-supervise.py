@@ -7,7 +7,6 @@
 @LastEditors: 
 @Description: 
 @File: semi-supervised.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
 """
 import pathlib
 import sys

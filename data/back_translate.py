@@ -4,7 +4,6 @@
 @Author: frank
 @Date: 2020-08-08 22:40:43
 @File: back_translate.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
 """
 # !pip3 install jieba==0.36.2
 import jieba

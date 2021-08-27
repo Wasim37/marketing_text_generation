@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: lpx, jby
+@Author: author, author
 @Date: 2020-07-13 11:00:51
 LastEditTime: 2020-10-17 21:23:34
 LastEditors: Please set LastEditors
 @Description: Generate a summary.
-@FilePath: /JD_project_2/model/predict.py
-@Copyright: 北京贪心科技有限公司版权所有。仅供教学目的使用。
+@FilePath: /project_2/model/predict.py
 '''
 
 import random
