@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: author, author
+@Author: author
 @Date: 2020-07-13 12:31:25
-LastEditTime: 2020-10-20 15:03:46
+LastEditTime: 2021-08-27 18:06:54
 LastEditors: Please set LastEditors
 @Description: Train the model.
 @FilePath: /project_2/model/train.py

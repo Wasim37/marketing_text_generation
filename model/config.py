@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-@Author: author, author
+@Author: author
 @Date: 2020-07-13 11:00:51
 LastEditTime: 2020-10-19 16:16:52
 LastEditors: Please set LastEditors
