@@ -3,7 +3,7 @@
 '''
 @Author: author
 @Date: 2020-07-13 17:56:13
-LastEditTime: 2020-10-17 21:24:33
+LastEditTime: 2021-09-03 12:47:46
 LastEditors: Please set LastEditors
 @Description: Evaluate the model with ROUGE score.
 @FilePath: /project_2/model/rouge_eval.py
@@ -79,7 +79,7 @@ print('rouge2: ', result['rouge-2'])
 print('rougeL: ', result['rouge-l'])
 with open('../files/rouge_result.txt', 'a') as file:
     for r, metrics in result.items():
-        file.write(r+'\n')
+        file.write(r + '\n')
         for metric, value in metrics.items():
-            file.write(metric+': '+str(value*100))
+            file.write(metric + ': ' + str(value * 100))
             file.write('\n')

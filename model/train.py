@@ -3,7 +3,7 @@
 '''
 @Author: author
 @Date: 2020-07-13 12:31:25
-LastEditTime: 2021-08-27 18:06:54
+LastEditTime: 2021-09-03 17:09:08
 LastEditors: Please set LastEditors
 @Description: Train the model.
 @FilePath: /project_2/model/train.py
@@ -63,8 +63,7 @@ def train(dataset, val_dataset, v, start_epoch=0):
 
     print("initializing optimizer")
     # Define the optimizer.
-    optimizer = optim.Adam(model.parameters(),
-                           lr=config.learning_rate)
+    optimizer = optim.Adam(model.parameters(), lr=config.learning_rate)
     train_dataloader = DataLoader(dataset=train_data,
                                   batch_size=config.batch_size,
                                   shuffle=True,
@@ -117,11 +116,15 @@ def train(dataset, val_dataset, v, start_epoch=0):
                         len_oovs = len_oovs.to(DEVICE)
 
                     model.train()  # Sets the module in training mode.
+                    
+                    # https://www.zhihu.com/question/303070254 
+                    # 1、为什么要在反向传播前梯度清零? 2、如果是梯度累加怎么处理?
                     optimizer.zero_grad()  # Clear gradients.
-                    # Calculate loss.  Call model forward propagation
+                    
                     ###########################################
                     #          TODO: module 5 task 3          #
                     ###########################################
+                    # Calculate loss.  Call model forward propagation
                     loss = model(x,
                                  x_len,
                                  y,
@@ -129,7 +132,9 @@ def train(dataset, val_dataset, v, start_epoch=0):
                                  batch=batch,
                                  num_batches=num_batches,
                                  teacher_forcing=teacher_forcing)
-
+                    
+                    # 为什么添加的是loss.item 而不是loss 
+                    # https://blog.csdn.net/StarfishCu/article/details/112473856
                     batch_losses.append(loss.item())
                     loss.backward()  # Backpropagation.
 
@@ -183,7 +188,6 @@ def train(dataset, val_dataset, v, start_epoch=0):
 
 if __name__ == "__main__":
     # Prepare dataset for training.
-    DEVICE = torch.device('cuda') if config.is_cuda else torch.device('cpu')
     dataset = PairDataset(config.data_path,
                           max_src_len=config.max_src_len,
                           max_tgt_len=config.max_tgt_len,

@@ -3,7 +3,7 @@
 '''
 @Author: your name
 @Date: 2020-07-13 11:00:51
-LastEditTime: 2020-10-20 15:22:09
+LastEditTime: 2021-09-03 16:02:14
 LastEditors: Please set LastEditors
 @Description: Define the model.
 @FilePath: /project_2/model/model.py
@@ -42,7 +42,7 @@ class Encoder(nn.Module):
                             batch_first=True)
 
 #     @timer('encoder')
-    # forward调用链 https://blog.csdn.net/u011501388/article/details/84062483
+# forward调用链 https://blog.csdn.net/u011501388/article/details/84062483
     def forward(self, x, decoder_embedding):
         """Define forward propagation for the endoer.
 
@@ -252,10 +252,9 @@ class Decoder(nn.Module):
 
 class ReduceState(nn.Module):
     """
-    Since the encoder has a bidirectional LSTM layer while the decoder has a
-    unidirectional LSTM layer, we add this module to reduce the hidden states
-    output by the encoder (merge two directions) before input the hidden states
-    nto the decoder.
+    由于编码器是一个双向的LSTM层，而解码器为一个单向的LSTM层，
+    我们添加这个模块来减少编码器输出的隐藏状态(合并两个方向)，
+    然后将隐藏状态输入到解码器中
     """
     def __init__(self):
         super(ReduceState, self).__init__()
@@ -280,10 +279,7 @@ class ReduceState(nn.Module):
 
 
 class PGN(nn.Module):
-    def __init__(
-            self,
-            v
-    ):
+    def __init__(self, v):
         super(PGN, self).__init__()
         self.v = v
         self.DEVICE = config.DEVICE
